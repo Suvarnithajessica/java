@@ -1,0 +1,26 @@
+import java.util.*;
+class s{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=1,r=0;
+        boolean dir=true;
+        for(int i=1;i<=n;i++){
+        if(dir==true){
+                for(int j=1;j<=i;j++,count++){
+                    System.out.print(count+" ");
+                }
+                dir=false;
+            }
+        else{
+            r=count+i-1;
+            for(int j=1;j<=i;j++,r--,count++){
+                System.out.print(r+" ");
+            }
+            dir=true;
+        }
+        
+        System.out.println();
+        }
+        }
+} 
